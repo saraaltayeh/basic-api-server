@@ -10,6 +10,9 @@ const errorHandler = require("./error-handlers/500");
 const clothesRoutes = require("./routes/clothes");
 const foodRoutes = require("./routes/food");
 
+app.get("/", (req, res) => {
+    res.status(200).send('welcome to my world');
+});
 
 app.use(express.json());
 
